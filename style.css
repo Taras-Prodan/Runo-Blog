@@ -53,4 +53,62 @@ body {
   justify-content: center;
   align-items: center;
   gap: 18px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 80px;
+}
+
+.first {
+  width: 77px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 5px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 21px;
+  margin-top: 220px;
+}
+.first p {
+  width: 57px;
+  height: 11px;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.second {
+  width: 530px;
+  height: 88px;
+  color: rgb(255, 255, 255);
+  font-family: "Lora";
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.third {
+  display: flex;
+  width: 560px;
+  color: rgb(229, 229, 229);
+  padding: 17px 0 0 0;
+}
+.third p {
+  margin-right: 11px;
+}
+.third .line .line {
+  border-bottom: 1px solid #888;
+}
+.third span {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Lora";
+}
+.third hr {
+  width: 60px;
+  margin-right: 10px;
+  height: 1px;
 }/*# sourceMappingURL=style.css.map */
