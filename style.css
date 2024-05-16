@@ -12,13 +12,15 @@ body {
 }
 
 .header {
+  min-width: 1440px;
+  width: 100%;
   display: flex;
-  align-items: center;
   height: 80px;
   background: rgba(0, 0, 0, 0.2);
 }
 .header .container {
-  width: 1440px;
+  min-width: 1440px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,10 +31,9 @@ body {
   font-family: "League Spartan";
   font-size: 22px;
   margin-left: 70px;
-  display: flex;
-  flex: 0 0 70%;
 }
 .header .menu {
+  margin-left: 50%;
   width: 244px;
   height: 14px;
   display: flex;
@@ -119,7 +120,7 @@ body {
   margin-top: 90px;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -133,4 +134,4 @@ input[type=checkbox] {
   border: 1px solid white;
   border-radius: 50%;
   margin-right: 10px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
