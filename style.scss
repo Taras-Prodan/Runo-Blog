@@ -1,8 +1,9 @@
-*{
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-body{
-    background-image:url(Runo-Demo/Hero-image.png);
+
+body {
+    background-image: url(Runo-Demo/Hero-image.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;
@@ -11,26 +12,29 @@ body{
     margin: 0;
     padding: 0;
 }
- .header{
+
+.header {
     display: flex;
     align-items: center;
     height: 80px;
     background: rgba(0, 0, 0, 0.2);
 
-    .container{
-        width: 95%;
+    .container {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: rgb(229, 229, 229);
-       }
-    .logo{
+    }
+
+    .logo {
         color: rgb(248, 249, 250);
-        font-family:'League Spartan';
+        font-family: 'League Spartan';
         font-size: 22px;
         margin-left: 70px;
     }
-    .menu{
+
+    .menu {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,17 +42,20 @@ body{
         font-size: 12px;
         font-weight: 500;
         font-family: "Roboto", sans-serif;
-        a{
+        margin-right: 70px;
+      a {
             text-decoration: none;
             color: rgb(229, 229, 229);
         }
-        hr{
+
+        hr {
             height: 20px;
 
         }
 
     }
-    .links{
+
+    .links {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,54 +63,62 @@ body{
         height: 20px;
         display: flex;
         align-items: center;
-       
+
     }
- }
- .links{
-    #facebook{
+}
+
+.links {
+    #facebook {
         width: 20px;
         height: 20px;
-        background-image:url(Runo-Demo/facebook.svg);
+        background-image: url(Runo-Demo/facebook.svg);
         cursor: pointer;
     }
-    #twitter{
+
+    #twitter {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/twitter.svg);
         cursor: pointer;
     }
-    #youtube{
+
+    #youtube {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/youtube.svg);
         cursor: pointer;
     }
-    #pinterest{
+
+    #pinterest {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/pinterest.svg);
         cursor: pointer;
     }
-    #behance{
+
+    #behance {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/behance.svg);
         cursor: pointer;
     }
- }
- #search{
+}
+
+#search {
     width: 20px;
-        height: 20px;
-        background-image: url(Runo-Demo/Search\ Icon.svg);
-        cursor: pointer;
- }
- .hero{
+    height: 20px;
+    background-image: url(Runo-Demo/Search\ Icon.svg);
+    cursor: pointer;
+}
+
+.hero {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 80px;
 
 }
-.first{
+
+.first {
     width: 77px;
     height: 21px;
     display: flex;
@@ -113,7 +128,8 @@ body{
     background: rgba(255, 255, 255, 0.15);
     margin-bottom: 21px;
     margin-top: 250px;
-    p{
+
+    p {
         width: 57px;
         height: 11px;
         color: white;
@@ -122,7 +138,8 @@ body{
         font-family: 'Roboto', sans-serif;
     }
 }
-.second{
+
+.second {
     width: 530px;
     height: 88px;
     color: rgb(255, 255, 255);
@@ -130,40 +147,47 @@ body{
     font-size: 36px;
     font-weight: 700;
 }
-.third{
+
+.third {
     display: flex;
     width: 560px;
     color: rgb(229, 229, 229);
     padding: 17px 0 0 0;
- 
-    p{
-      margin-right: 11px;
+
+    p {
+        margin-right: 11px;
     }
-    .line{
+
+    .line {
         .line {
             border-bottom: 1px solid #888;
-          }
+        }
     }
-    span{
+
+    span {
         font-size: 12px;
         font-weight: 400;
         font-family: 'Lora';
     }
-    hr{
+
+    hr {
         width: 60px;
         margin-right: 10px;
         height: 1px;
-    } 
+    }
 }
-.btn-hero{
+
+.btn-hero {
     width: 50px;
     display: flex;
     margin-top: 60px;
 }
+
 input[type="checkbox"] {
     display: none;
-  }
-  .btn::before {
+}
+
+.btn::before {
     content: "";
     display: block;
     background: rgba(255, 255, 255, 0.2);
