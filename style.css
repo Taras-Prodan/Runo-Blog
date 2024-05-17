@@ -9,18 +9,18 @@ body {
   height: 600px;
   background-size: cover;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-  min-width: 1440px;
-  width: 100%;
   display: flex;
+  align-items: center;
   height: 80px;
   background: rgba(0, 0, 0, 0.2);
 }
 .header .container {
-  min-width: 1440px;
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,9 +33,6 @@ body {
   margin-left: 70px;
 }
 .header .menu {
-  margin-left: 50%;
-  width: 244px;
-  height: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,17 +40,60 @@ body {
   font-size: 12px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  margin-right: 35px;
 }
 .header .menu a {
   text-decoration: none;
   color: rgb(229, 229, 229);
 }
-.header .link {
+.header .menu hr {
+  height: 20px;
+}
+.header .links {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 18px;
+  justify-content: space-between;
+  width: 180px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.links #facebook {
+  width: 20px;
+  height: 20px;
+  background-image: url(Runo-Demo/facebook.svg);
+  cursor: pointer;
+}
+.links #twitter {
+  width: 20px;
+  height: 20px;
+  background-image: url(Runo-Demo/twitter.svg);
+  cursor: pointer;
+}
+.links #youtube {
+  width: 20px;
+  height: 20px;
+  background-image: url(Runo-Demo/youtube.svg);
+  cursor: pointer;
+}
+.links #pinterest {
+  width: 20px;
+  height: 20px;
+  background-image: url(Runo-Demo/pinterest.svg);
+  cursor: pointer;
+}
+.links #behance {
+  width: 20px;
+  height: 20px;
+  background-image: url(Runo-Demo/behance.svg);
+  cursor: pointer;
+}
+
+#search {
+  width: 20px;
+  height: 20px;
+  background-image: url(Runo-Demo/Search\ Icon.svg);
+  cursor: pointer;
 }
 
 .hero {
@@ -117,10 +157,10 @@ body {
 .btn-hero {
   width: 50px;
   display: flex;
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   display: none;
 }
 
@@ -134,4 +174,4 @@ input[type="checkbox"] {
   border: 1px solid white;
   border-radius: 50%;
   margin-right: 10px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

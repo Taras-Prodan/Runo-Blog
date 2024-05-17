@@ -18,13 +18,11 @@ body{
     background: rgba(0, 0, 0, 0.2);
 
     .container{
-        min-width: 1440px;
-        width: 100%;
+        width: 95%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         color: rgb(229, 229, 229);
-        margin: 0 auto;
-        padding: 0 20px;
        }
     .logo{
         color: rgb(248, 249, 250);
@@ -33,9 +31,6 @@ body{
         margin-left: 70px;
     }
     .menu{
-        margin-left: 50%;
-        width: 244px;
-        height: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,20 +38,64 @@ body{
         font-size: 12px;
         font-weight: 500;
         font-family: "Roboto", sans-serif;
-        margin-right: 35px;
-
         a{
             text-decoration: none;
             color: rgb(229, 229, 229);
         }
+        hr{
+            height: 20px;
+
+        }
 
     }
-    .link{
+    .links{
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 18px;
+        justify-content: space-between;
+        width: 180px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+       
     }
+ }
+ .links{
+    #facebook{
+        width: 20px;
+        height: 20px;
+        background-image:url(Runo-Demo/facebook.svg);
+        cursor: pointer;
+    }
+    #twitter{
+        width: 20px;
+        height: 20px;
+        background-image: url(Runo-Demo/twitter.svg);
+        cursor: pointer;
+    }
+    #youtube{
+        width: 20px;
+        height: 20px;
+        background-image: url(Runo-Demo/youtube.svg);
+        cursor: pointer;
+    }
+    #pinterest{
+        width: 20px;
+        height: 20px;
+        background-image: url(Runo-Demo/pinterest.svg);
+        cursor: pointer;
+    }
+    #behance{
+        width: 20px;
+        height: 20px;
+        background-image: url(Runo-Demo/behance.svg);
+        cursor: pointer;
+    }
+ }
+ #search{
+    width: 20px;
+        height: 20px;
+        background-image: url(Runo-Demo/Search\ Icon.svg);
+        cursor: pointer;
  }
  .hero{
     display: flex;
@@ -119,7 +158,7 @@ body{
 .btn-hero{
     width: 50px;
     display: flex;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 input[type="checkbox"] {
     display: none;
