@@ -12,7 +12,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .header {
     display: flex;
     align-items: center;
@@ -114,8 +113,7 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 80px;
-
+    padding: 0 0 130px 80px;
 }
 
 .first {
@@ -197,4 +195,57 @@ input[type="checkbox"] {
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 10px;
+}
+.main{
+    padding: 160px 70px 0 70px;
+
+
+    span{
+        font-size: 36px;
+        font-weight: 700;
+        color: rgb(73, 80, 87);
+    }
+}
+.breadcrumbs{
+    color: rgb(73, 80, 87);
+    display: flex;
+    padding:35px 0 ;
+    gap:20px;
+    font-size: 12px bold;
+    font-weight: 700px;
+    a{
+        text-decoration: none;
+        color: rgb(73, 80, 87);
+    }
+
+    a:hover{
+        color: rgb(212, 163, 115);
+    }
+    #view-all {
+        margin-left: auto; 
+    }
+}
+.blogs-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+    .blog-box{
+        flex-grow: 1;
+        width: 310px;
+        height: 470px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+}
+.image-blog{
+    border: 1px solid black;
+    height: 280px;
+
+    img{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
