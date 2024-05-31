@@ -67,35 +67,31 @@ body {
 }
 
 .links {
-    #facebook {
+    .facebook {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/facebook.svg);
         cursor: pointer;
     }
-
-    #twitter {
+    .twitter {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/twitter.svg);
         cursor: pointer;
     }
-
-    #youtube {
+    .youtube {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/youtube.svg);
         cursor: pointer;
     }
-
-    #pinterest {
+    .pinterest {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/pinterest.svg);
         cursor: pointer;
     }
-
-    #behance {
+    .behance {
         width: 20px;
         height: 20px;
         background-image: url(Runo-Demo/behance.svg);
@@ -201,7 +197,7 @@ input[type="checkbox"] {
 
 
     span{
-        font-size: 36px;
+        font-size: 45px;
         font-weight: 700;
         color: rgb(73, 80, 87);
     }
@@ -211,7 +207,7 @@ input[type="checkbox"] {
     display: flex;
     padding:35px 0 ;
     gap:20px;
-    font-size: 12px bold;
+    font-size: 16px;
     font-weight: 700px;
     a{
         text-decoration: none;
@@ -230,22 +226,246 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     gap: 20px;
 
-
+    .date-blog{
+        color: rgb(108, 117, 125);
+        font-size: 12px bold;
+        font-weight: 700;
+        padding: 20px 0 0 0;
+    }
+    .title-blog{
+        color: rgb(73, 80, 87);
+        font-size: 29px;
+        padding: 30px 0 0 0;
+        font-weight: 700;
+    }
+    .description-blog{
+        color: rgb(108, 117, 125);
+        font-size: 15px;
+        padding: 40px 0 0 0;
+        font-weight: 700;
+    }
     .blog-box{
-        flex-grow: 1;
-        width: 310px;
-        height: 470px;
-        border: 1px solid black;
+        width : calc(25% - 15px);
+        height: 600px;
         box-sizing: border-box;
     }
 }
 .image-blog{
-    border: 1px solid black;
-    height: 280px;
-
     img{
+        width: 100%;
+    }
+    .category-blog{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+}
+    }
+
+    .big-picture-main {
+        margin-top: 160px;
+        background-image: url('Runo-Demo/Main-image.png');
+        background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        height: 600px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+    
+        div:first-child {
+            background: rgba(255, 255, 255, 0.15);
+            width: 65px;
+            height: 25px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 10px 5px 10px;
+            border-radius: 8px;
+        }
+        div{
+            color: rgb(229, 229, 229)
+        }
+        .main-first{
+            width: 530px;
+            font-size: 36px;
+            font-weight: 700;
+            font-family: "Lora", serif;
+            text-align: center;
+            padding: 30px 0 20px 0 ;
+        }
+        span{
+            display: block;
+        }
+        .main-second{
+            width: 440px;
+            font-family: "Lora";
+            font-size: 13px;
+            font-weight: 400;
+            text-align: center;
+            padding: 0 0 20px 0 ;
+        }
+        hr{
+            width: 30px;
+            height: 1px;
+        }
+        .main-third{
+            padding: 15px 0 0 0;
+            font-family: "Lora";
+            font-weight: 400;
+            font-size: 12px;
+        }
+        
+    }
+.main-buttom-blog {
+        padding: 180px 70px 0px 70px;
+        .blog-metro {
+            font-family: "Lora";
+            font-size: 36px;
+            font-weight: 700;
+            color: rgb(73, 80, 87);
+        }
+        .image-blog-metro {
+            padding: 70px 0 100px 0;
+            display: flex;
+            gap: 20px;
+            div {
+                flex: 1;
+                box-sizing: border-box;
+            }
+            .first-blog-metro, 
+            .second-blog-metro, 
+            .third-blog-metro {
+                height: 480px;
+                width: 360px;
+            }
+        }.first-blog-metro{
+            background-image: url(Runo-Demo/Blog\ Image\ 11.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }.metro-blog-frame{
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 30px;
+            margin-top: 30px;
+            width: 70px;
+            height: 25px;
+            color: white;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.15);
+
+            span{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 10px 5px 10px;
+                font-family: "Roboto";
+            }
+        }.metro-blog-date{
+            color: rgb(229, 229, 229);
+            font-family: "Lora";
+            font-size: 14px;
+            font-weight: 400;
+            padding: 220px 0 0 60px;
+        }.metro-blog-title{
+            color: rgb(255, 255, 255);
+            font-family: "Lora";
+            font-size: 20px;
+            font-weight: 700;
+            padding: 25px 0 0 60px;
+            line-height: 1.5;
+        }.metro-blog-about{
+            color: rgb(229, 229, 229);
+            font-family: "Lora";
+            font-size: 13px;
+            font-weight: 400;
+            padding: 25px 0 0 60px;
+            line-height: 1.7;
+        }
+        .second-blog-metro{
+            background-image: url(Runo-Demo/Blog\ Image\ 10.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+    }.third-blog-metro{
+        background-image: url(Runo-Demo/Blog\ Image\ 9.png);
         background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        position: relative;
+}
+} .footer {
+    height: 500px;
+    background: rgb(33, 37, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 4 * 60px);
+        padding: 0 70px;
+        color: rgb(255, 255, 255);
+
+        h3{
+            font-size: 26px;
+            font-weight: 700;
+            padding: 0 0 25px 0;
+            font-family: "Lora";
+        }
+        li{
+            font-size: 15px;
+            color: rgb(229, 229, 229);
+            font-weight: 400;
+            font-family: "Lora";
+            padding: 12px 0;
+        }
+        p{
+            font-size: 15px;
+            color: rgb(229, 229, 229);
+            font-weight: 400;
+            font-family: "Lora";
+            padding: 12px 0;
+        }
+    } .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 180px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+
+    }
+}   
+.sub-footer{
+    height: 80px;
+    background: rgb(52, 58, 64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 70px ;
+
+    p{
+        color: rgb(229, 229, 229);
+        font-family: "Lora";
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    a{
+        color: rgb(229, 229, 229);
+        font-family: "Lora";
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
     }
 }

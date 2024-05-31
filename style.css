@@ -59,31 +59,31 @@ body {
   align-items: center;
 }
 
-.links #facebook {
+.links .facebook {
   width: 20px;
   height: 20px;
   background-image: url(Runo-Demo/facebook.svg);
   cursor: pointer;
 }
-.links #twitter {
+.links .twitter {
   width: 20px;
   height: 20px;
   background-image: url(Runo-Demo/twitter.svg);
   cursor: pointer;
 }
-.links #youtube {
+.links .youtube {
   width: 20px;
   height: 20px;
   background-image: url(Runo-Demo/youtube.svg);
   cursor: pointer;
 }
-.links #pinterest {
+.links .pinterest {
   width: 20px;
   height: 20px;
   background-image: url(Runo-Demo/pinterest.svg);
   cursor: pointer;
 }
-.links #behance {
+.links .behance {
   width: 20px;
   height: 20px;
   background-image: url(Runo-Demo/behance.svg);
@@ -181,7 +181,7 @@ input[type=checkbox] {
   padding: 160px 70px 0 70px;
 }
 .main span {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 700;
   color: rgb(73, 80, 87);
 }
@@ -191,7 +191,7 @@ input[type=checkbox] {
   display: flex;
   padding: 35px 0;
   gap: 20px;
-  font-size: 12px bold;
+  font-size: 16px;
   font-weight: 700px;
 }
 .breadcrumbs a {
@@ -210,20 +210,247 @@ input[type=checkbox] {
   flex-wrap: wrap;
   gap: 20px;
 }
+.blogs-images .date-blog {
+  color: rgb(108, 117, 125);
+  font-size: 12px bold;
+  font-weight: 700;
+  padding: 20px 0 0 0;
+}
+.blogs-images .title-blog {
+  color: rgb(73, 80, 87);
+  font-size: 29px;
+  padding: 30px 0 0 0;
+  font-weight: 700;
+}
+.blogs-images .description-blog {
+  color: rgb(108, 117, 125);
+  font-size: 15px;
+  padding: 40px 0 0 0;
+  font-weight: 700;
+}
 .blogs-images .blog-box {
-  flex-grow: 1;
-  width: 310px;
-  height: 470px;
-  border: 1px solid black;
+  width: calc(25% - 15px);
+  height: 600px;
   box-sizing: border-box;
 }
 
-.image-blog {
-  border: 1px solid black;
-  height: 280px;
-}
 .image-blog img {
+  width: 100%;
+}
+.image-blog .category-blog {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.big-picture-main {
+  margin-top: 160px;
+  background-image: url("Runo-Demo/Main-image.png");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.big-picture-main div:first-child {
+  background: rgba(255, 255, 255, 0.15);
+  width: 65px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  border-radius: 8px;
+}
+.big-picture-main div {
+  color: rgb(229, 229, 229);
+}
+.big-picture-main .main-first {
+  width: 530px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Lora", serif;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+.big-picture-main span {
+  display: block;
+}
+.big-picture-main .main-second {
+  width: 440px;
+  font-family: "Lora";
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+.big-picture-main hr {
+  width: 30px;
+  height: 1px;
+}
+.big-picture-main .main-third {
+  padding: 15px 0 0 0;
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.main-buttom-blog {
+  padding: 180px 70px 0px 70px;
+}
+.main-buttom-blog .blog-metro {
+  font-family: "Lora";
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(73, 80, 87);
+}
+.main-buttom-blog .image-blog-metro {
+  padding: 70px 0 100px 0;
+  display: flex;
+  gap: 20px;
+}
+.main-buttom-blog .image-blog-metro div {
+  flex: 1;
+  box-sizing: border-box;
+}
+.main-buttom-blog .image-blog-metro .first-blog-metro,
+.main-buttom-blog .image-blog-metro .second-blog-metro,
+.main-buttom-blog .image-blog-metro .third-blog-metro {
+  height: 480px;
+  width: 360px;
+}
+.main-buttom-blog .first-blog-metro {
+  background-image: url(Runo-Demo/Blog\ Image\ 11.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.main-buttom-blog .metro-blog-frame {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 30px;
+  margin-top: 30px;
+  width: 70px;
+  height: 25px;
+  color: white;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+}
+.main-buttom-blog .metro-blog-frame span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  font-family: "Roboto";
+}
+.main-buttom-blog .metro-blog-date {
+  color: rgb(229, 229, 229);
+  font-family: "Lora";
+  font-size: 14px;
+  font-weight: 400;
+  padding: 220px 0 0 60px;
+}
+.main-buttom-blog .metro-blog-title {
+  color: rgb(255, 255, 255);
+  font-family: "Lora";
+  font-size: 20px;
+  font-weight: 700;
+  padding: 25px 0 0 60px;
+  line-height: 1.5;
+}
+.main-buttom-blog .metro-blog-about {
+  color: rgb(229, 229, 229);
+  font-family: "Lora";
+  font-size: 13px;
+  font-weight: 400;
+  padding: 25px 0 0 60px;
+  line-height: 1.7;
+}
+.main-buttom-blog .second-blog-metro {
+  background-image: url(Runo-Demo/Blog\ Image\ 10.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.main-buttom-blog .third-blog-metro {
+  background-image: url(Runo-Demo/Blog\ Image\ 9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.footer {
+  height: 500px;
+  background: rgb(33, 37, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 240px);
+  padding: 0 70px;
+  color: rgb(255, 255, 255);
+}
+.footer .footer-menu h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 0 0 25px 0;
+  font-family: "Lora";
+}
+.footer .footer-menu li {
+  font-size: 15px;
+  color: rgb(229, 229, 229);
+  font-weight: 400;
+  font-family: "Lora";
+  padding: 12px 0;
+}
+.footer .footer-menu p {
+  font-size: 15px;
+  color: rgb(229, 229, 229);
+  font-weight: 400;
+  font-family: "Lora";
+  padding: 12px 0;
+}
+.footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-footer {
+  height: 80px;
+  background: rgb(52, 58, 64);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+.sub-footer p {
+  color: rgb(229, 229, 229);
+  font-family: "Lora";
+  font-size: 14px;
+  font-weight: 700;
+}
+.sub-footer a {
+  color: rgb(229, 229, 229);
+  font-family: "Lora";
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
